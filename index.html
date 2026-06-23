@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Calculator</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./src/app.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="calculator" aria-label="Calculator">
+        <div class="display-panel">
+          <p class="history" data-history aria-live="polite"></p>
+          <output class="display" data-display aria-live="polite">0</output>
+        </div>
+
+        <div class="keypad" aria-label="Calculator controls">
+          <button class="key key-clear span-3" type="button" data-action="clear">Clear</button>
+          <button class="key key-operator" type="button" data-action="operator" data-value="÷">
+            ÷
+          </button>
+
+          <button class="key" type="button" data-action="digit" data-value="7">7</button>
+          <button class="key" type="button" data-action="digit" data-value="8">8</button>
+          <button class="key" type="button" data-action="digit" data-value="9">9</button>
+          <button class="key key-operator" type="button" data-action="operator" data-value="×">
+            ×
+          </button>
+
+          <button class="key" type="button" data-action="digit" data-value="4">4</button>
+          <button class="key" type="button" data-action="digit" data-value="5">5</button>
+          <button class="key" type="button" data-action="digit" data-value="6">6</button>
+          <button class="key key-operator" type="button" data-action="operator" data-value="−">
+            −
+          </button>
+
+          <button class="key" type="button" data-action="digit" data-value="1">1</button>
+          <button class="key" type="button" data-action="digit" data-value="2">2</button>
+          <button class="key" type="button" data-action="digit" data-value="3">3</button>
+          <button class="key key-operator" type="button" data-action="operator" data-value="+">
+            +
+          </button>
+
+          <button class="key span-3" type="button" data-action="digit" data-value="0">0</button>
+          <button class="key key-equals" type="button" data-action="equals">=</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
